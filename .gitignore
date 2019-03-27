@@ -158,3 +158,11 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+.gitignore
+.idea/encodings.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/untitled3.iml
+.idea/vcs.xml
+root/app.py
+root/local_run.py
