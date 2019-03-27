@@ -5,6 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-<H1></H1>
+<form action = "/api" method = "POST" id="form_user">
+         <p>Name <input type = "text" name = "name" value="{{boy.get('name')}}"/></p>
+         <p>Age <input type = "text" name = "lastname" value="{{boy.get('lastname')}}" /></p>
+     </form>
+
+    <button type="submit" form="form_user" name="action" value="user_update">Submit</button>
+
 </body>
 </html>

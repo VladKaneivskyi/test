@@ -28,8 +28,8 @@ def apipost():
 
    if request.form["action"] == "user_update":
 
-      boy["name"] = request.form["first_name"]
-      girl["lastname"] = request.form["age"]
+      boy["name"] = request.form["name"]
+      boy["lastname"] = request.form["lastname"]
 
       return redirect(url_for('apiget', action="all"))
 
@@ -43,8 +43,8 @@ if __name__ == '__main__':
           }
 
    girl = {
-           "name": "Ada",
-           "lastname": "Buchynska",
+           "name": "***",
+           "lastname": "********",
            "specifications": "fake bitch"
          }
 
