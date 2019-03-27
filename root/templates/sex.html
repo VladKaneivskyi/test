@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    table, td
+        {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        </style>
+</head>
+<body>
+    <table>
+        <tr>
+        <td>{{boy["name"]}}</td>
+        <td colspan = "2">{{boy["lastname"]}}</td>
+        </tr>
+        <tr>
+        <td colspan = "3">Said:</td>
+        </tr>
+        <tr>
+        <td>This {{girl["name"]}}</td>
+        <td> {{girl["lastname"]}}   </td>
+        <td>is      {{girl["specifications"]}}</td>
+        </tr>
+    </table>
+</body>
+</html>

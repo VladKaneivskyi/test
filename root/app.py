@@ -8,13 +8,13 @@ app = Flask(__name__)
 def apiget(action):
 
    if action == "user":
-      return render_template("boy.html",user=boy)
+      return render_template("boy.html",boy=boy)
 
    elif action == "car":
-      return render_template("girl.html", car=girl)
+      return render_template("girl.html", girl=girl)
 
    elif action == "all":
-      return render_template("sex.html", user=boy, car=girl)
+      return render_template("sex.html", boy=boy, girl=girl)
 
    else:
       return render_template("404.html", action_value=action)
@@ -43,8 +43,8 @@ if __name__ == '__main__':
           }
 
    girl = {
-           "name": "Ford",
-           "lastname": "Mustang",
+           "name": "Ada",
+           "lastname": "Buchynska",
            "specifications": "fake bitch"
          }
 
